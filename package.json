@@ -2,12 +2,12 @@
   "name": "webnotify",
   "description": "Simple Web Notifications",
   "version": "0.1.0",
-  "homepage": "https://github.com/cynicaljoy/notify",
+  "homepage": "https://github.com/cynicaljoy/webnotify",
   "authors": ["Darren Cuningham <@cynicaljoy>"],
   "repository": {
     "type": "git",
     "url": "https://github.com/cynicaljoy/webnotify.git"
   },
   "keywords": ["ender", "webnotify", "notify", "notifications"],
-  "main": "./notify.js"
+  "main": "./webnotify.js"
 }

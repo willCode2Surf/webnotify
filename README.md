@@ -1,14 +1,14 @@
-Notify - Simple Web Notifications
+Webnotify - Simple Web Notifications
 -----
-Notify simplies the process to create a Web Notification.
+Webnotify simplies the process to create a Web Notification.
 
 Example
 -------
 
 ``` js
-var notify = require('notify');
+var webnotify = require('webnotify');
 
-notify("Hello, World!", {
+webnotify("Hello, World!", {
   "body": "This is an example message.",
   "tag": "unique_id",
   // Not applicable for Safair
@@ -30,7 +30,7 @@ notify("Hello, World!", {
 
 Browser Support
 ---------------
-Notify supports the following browsers:
+Webnotify supports the following browsers:
 
   - Chrome 5+
   - Safari 6+
@@ -39,7 +39,7 @@ Reference [Can I Use](http://caniuse.com/notifications)
 
 Ender support
 -------------
-Notify supports [Ender](http://ender.no.de). If you don't have Ender, install it, and don't ever look back.
+Webnotify supports [Ender](http://ender.no.de). If you don't have Ender, install it, and don't ever look back.
 
     $ npm install ender -g
 
