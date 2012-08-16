@@ -4,11 +4,11 @@
   * copyright Darren Cunningham 2012
   * MIT License
   */
-(function (name, definition, context) {
-  if (typeof module != 'undefined' && module.exports) module.exports = definition()
-  else if (typeof context['define'] == 'function' && context['define']['amd']) define(name, definition)
-  else context[name] = definition()
-})('webnotify', function () {
+!function (name, definition) {
+  if (typeof define == 'function') define(definition)
+  else if (typeof module != 'undefined') module.exports = definition()
+  else this[name] = definition()
+}('webnotify', function () {
   if (!Notification) return;
 
   var context = this,
@@ -28,7 +28,7 @@
     }
   };
 
-  var webnotify = function (title, options)
+  function webnotify(title, options)
   {
     context.title = title;
     context.options = (options === undefined) ? {} : options;
@@ -37,4 +37,4 @@
   };
 
   return webnotify;
-}, this);
+});
