@@ -45,8 +45,8 @@ Notify supports [Ender](http://ender.no.de). If you don't have Ender, install it
 
 To include Query in a custom build of Ender you can include it as such:
 
-    $ ender build notify[,mod2,mod3,...]
+    $ ender build webnotify[,mod2,mod3,...]
 
 Or add it to an existing Ender installation
 
-    $ ender add notify
+    $ ender add webnotify
