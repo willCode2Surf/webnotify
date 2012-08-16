@@ -1,0 +1,13 @@
+{
+  "name": "notify",
+  "description": "Simple Web Notifications",
+  "version": "0.1.0",
+  "homepage": "https://github.com/cynicaljoy/notify",
+  "authors": ["Darren Cuningham <@cynicaljoy>"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cynicaljoy/notify.git"
+  },
+  "keywords": ["ender", "notify", "notifications"],
+  "main": "./notify.js"
+}
