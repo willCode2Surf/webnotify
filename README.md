@@ -5,6 +5,7 @@ Webnotify simplies the process to create a Web Notification.
 Examples
 -------
 
+Simple method call
 ``` js
 var webnotify = require('webnotify');
 
@@ -28,6 +29,7 @@ webnotify("Hello, World!", {
 });
 ```
 
+With ender & module pattern
 ``` js
 var notify = require("webnotify");
 
@@ -42,6 +44,13 @@ var section = (function() {
     }
   }
 })(ender, notify);
+```
+
+RequireJS (ender not required)
+``` js
+require(['webnotify'], function (notify) {
+  notify("Another Test Notification");
+});
 ```
 
 Browser Support
