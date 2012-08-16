@@ -1,7 +1,8 @@
 !function (name, definition) {
-  if (typeof define == 'function') define(definition)
-  else if (typeof module != 'undefined' && module.exports) module.exports['webnotify'] = definition()
-  else this[name] = definition()
+  if (typeof define == 'function') define(definition);
+  else if (typeof module != 'undefined' && module.exports)
+    module.exports.webnotify = definition();
+  else this[name] = definition();
 }('webnotify', function () {
   if (!window.Notification) return;
 
@@ -28,7 +29,7 @@
     context.options = (options === undefined) ? {} : options;
 
     testPermissions();
-  };
+  }
 
   return webnotify;
 });
