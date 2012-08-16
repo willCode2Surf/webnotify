@@ -28,11 +28,13 @@
     }
   };
 
-  $.notify = function (title, options)
+  var notify = function (title, options)
   {
     context.title = title;
     context.options = (options === undefined) ? {} : options;
 
     testPermissions();
   };
+
+  return notify;
 }, this);
