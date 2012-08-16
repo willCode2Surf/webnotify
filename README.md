@@ -11,7 +11,7 @@ var webnotify = require('webnotify');
 webnotify("Hello, World!", {
   "body": "This is an example message.",
   "tag": "unique_id",
-  // Not applicable for Safair
+  // Not applicable for Safari
   "iconUrl": "notification.gif",
   "onshow": function() {
     console.log("Notification Displayed");
