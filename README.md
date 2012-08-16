@@ -2,7 +2,7 @@ Webnotify - Simple Web Notifications
 -----
 Webnotify simplies the process to create a Web Notification.
 
-Example
+Examples
 -------
 
 ``` js
@@ -26,6 +26,22 @@ webnotify("Hello, World!", {
     console.error("Something went wrong with the notification");
   }
 });
+```
+
+``` js
+var notify = require("webnotify");
+
+var section = (function() {
+  $('#button').click(function () {
+    notify("You clicked the button");
+  });
+
+  return {
+    method: function () {
+      console.log("Some silly method");
+    }
+  }
+})(ender, notify);
 ```
 
 Browser Support
