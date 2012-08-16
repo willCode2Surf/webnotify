@@ -6,6 +6,8 @@ Example
 -------
 
 ``` js
+var notify = require('notify');
+
 notify("Hello, World!", {
   "body": "This is an example message.",
   "tag": "unique_id",
